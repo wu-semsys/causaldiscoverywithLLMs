@@ -1,0 +1,20 @@
+I have tabular data, and I would like it transformed into a descriptive natural language
+format where each row is expressed as a sentence. The first row contains headers, and
+subsequent rows contain values. The transformation should follow this pattern:
+Example Input:
+Platform, PlatformType, hostedBy_Platform
+PlatformA, TypeX, PlatformB
+
+Sensor, hostedBy_Platform, observes_ObservableProperty
+SensorA, PlatformA, ObservablePropertyA
+
+Example Result:
+• ItemA is a type of TypeX.
+
+If a cell is blank or missing, describe it appropriately. For example:
+“ItemX does not have a type.”
+Use your general knowledge and reasoning capabilities to decide the relation between the
+columns. It does not necessarily have to be “is a type of,” but could also reflect a totally
+different relation depending on the context of the data.
+Now transform the following table into the same format:
+...

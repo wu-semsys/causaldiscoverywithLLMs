@@ -1,0 +1,5 @@
+Using the structured data from the first prompt, generate StateTypes
+that describe system conditions based on observable properties and platform types. Ensure
+that each StateType reflects an actual system state that can be used for causal inference.
+We are mainly interested in states connected to the cause of:
+...

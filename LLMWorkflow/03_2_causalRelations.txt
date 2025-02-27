@@ -1,0 +1,8 @@
+...
+Both the Causing State and the Effect State must be
+strictly selected from the predefined StateTypes. No new StateTypes should be
+created in this step. Only causal dependencies between existing StateTypes should be es-
+tablished.
+Ensure accuracy in temporal and topological associations.
+If any concept is unclear, highlight uncertainties and request expert clarification to ensure
+correct understanding. 

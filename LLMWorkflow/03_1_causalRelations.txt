@@ -1,0 +1,8 @@
+Using the predefined StateTypes, generate causal dependencies that
+describe how system states influence one another. Each causal dependency should follow
+this format:
+StateType_cause, Causal Relation, Temporal Relation, Topological Relation, StateType_effect
+StateTypeA, causes, overlaps, parentPlatform, StateTypeB
+
+Now, generate relevant causal dependencies based on the following StateTypes:
+...

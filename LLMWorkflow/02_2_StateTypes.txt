@@ -1,0 +1,8 @@
+...
+
+Follow this structure:
+StateType, associated Observable Property, associated Platform Type, Description
+StateTypeA, ObservablePropertyA, PlatformA, Short description of StateType
+
+Now, generate additional relevant StateTypes. Ensure accuracy in
+platform association and describe each state in detail. The output format has to be a table.

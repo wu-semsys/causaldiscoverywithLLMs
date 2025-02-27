@@ -1,0 +1,27 @@
+Let’s define a concise “meta-language” for clarity. Whenever the following terms are used, they carry the meanings below:
+Platform
+A Platform is any device, facility, or logical group that can host sensors measuring data.
+Devices, facilities, and logical groupings are all considered Platforms in the SENSE stack.
+Platform Type
+A type of Platform. Each Platform has a Platform Type.
+Sensor
+A Sensor measures some property in the system and is always hosted by a Platform.
+Each sensor is physically or logically located on exactly one Platform.
+hostedBy
+A hierarchical relationship indicating that a sub-platform (or a sensor) is hosted by a higher-level Platform.
+The first (top-level) Platform is typically considered the “host,” and any nested Platforms or Sensors are said to be hostedBy it.
+State Type Causality
+A causal link between two State Types. Each causal relation has three key features describing how and why one State Type influences another:
+- Topological Relation: Describes where (topologically) the cause State Type occurs in relation to the effect State Type.
+    - samePlatform: cause and effect happen on the same Platform
+    - parentPlatform: the Platform of the effect State hosts the Platform of the cause State
+    - siblingPlatform: the States occur on two distinct Platforms hosted by the same parent
+- Temporal Relation: Describes when the cause State Type occurs relative to the effect State Type.
+    - before: cause State starts and ends before effect State starts
+    - overlaps: cause State starts before the effect State and ends after the effect State has started
+    - contains: cause State starts before and ends after the effect State has ended
+    - identity: cause and effect States start and end at the same time
+- Causal Relation: Describes the nature of the causal connection.
+    - cause: If the cause State occurs, the effect State most probably occurs as a result
+    - enable: If the cause State does not occur, the effect State most probably does not occur
+    - prevent: If the cause State occurs, the effect State most probably does not occur as a result
